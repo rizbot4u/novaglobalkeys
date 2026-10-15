@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Global Keys | AI Execution Engine & RWA Settlement on Base</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0B0F17',
+                            card: '#121824',
+                            border: '#1E293B',
+                            accent: '#10B981',
+                            accentGlow: 'rgba(16, 185, 129, 0.15)',
+                            cyan: '#06B6D4',
+                            blue: '#3B82F6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0B0F17; color: #F8FAFC; font-family: 'Inter', sans-serif; }
+        .glass-panel { background: rgba(18, 24, 36, 0.75); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .glow-emerald { box-shadow: 0 0 25px rgba(16, 185, 129, 0.2); }
+    </style>
+</head>
+<body class="bg-brand-dark text-slate-100 antialiased">
+
+    <header class="sticky top-0 z-50 glass-panel border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-accent to-brand-cyan flex items-center justify-center text-black font-bold text-xl">N</div>
+                <div>
+                    <span class="font-extrabold text-xl tracking-tight text-white">NOVA <span class="text-brand-accent">GLOBAL KEYS</span></span>
+                    <span class="block text-[10px] tracking-widest text-slate-400 uppercase">Institutional Infrastructure</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#overview" class="hover:text-brand-accent transition-colors">Overview</a>
+                <a href="#receipts" class="hover:text-brand-accent transition-colors">BaseScan Receipts</a>
+                <a href="#sdk" class="hover:text-brand-accent transition-colors">SDK Suite</a>
+            </nav>
+            <div class="hidden sm:flex items-center space-x-4">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-mono font-medium bg-emerald-500/10 text-brand-accent border border-emerald-500/20">
+                    <span class="w-2 h-2 rounded-full bg-brand-accent animate-ping mr-2"></span>
+                    Base Mainnet Live
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <section id="overview" class="relative pt-20 pb-24 overflow-hidden">
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b15_1px,transparent_1px),linear-gradient(to_bottom,#1e293b15_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-slate-800/80 border border-slate-700/60 mb-8">
+                <span class="text-xs font-semibold text-brand-cyan uppercase tracking-wider">Bybit Level 3 Broker Integrated</span>
+                <span class="text-slate-500">•</span>
+                <span class="text-xs font-mono text-slate-300">Broker ID: Kr000820</span>
+            </div>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-none mb-6">
+                AI Execution Engine meets <br class="hidden sm:inline" />
+                <span class="bg-gradient-to-r from-brand-accent via-emerald-300 to-brand-cyan bg-clip-text text-transparent">On-Chain RWA Settlement</span>
+            </h1>
+            <p class="max-w-3xl mx-auto text-lg sm:text-xl text-slate-400 leading-relaxed mb-10">
+                The full tokenisation and settlement stack for Real-World Assets on <strong class="text-slate-200">Base Mainnet</strong>. Plain-language execution backed by an Nova Orchestrator and verified atomic DvP settlement — both legs in a single transaction, or both revert.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+                <a href="#receipts" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-brand-accent to-emerald-500 text-slate-950 font-bold text-base shadow-xl shadow-emerald-500/20">
+                    View BaseScan Receipts
+                </a>
+                <a href="#sdk" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-800/90 text-white font-semibold text-base border border-slate-700">
+                    Explore Nova SDK
+                </a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800/80">
+                    <div class="text-3xl font-extrabold font-mono text-brand-accent mb-1">&lt; $0.002</div>
+                    <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Round-Trip Gas Fee</div>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800/80">
+                    <div class="text-3xl font-extrabold font-mono text-brand-cyan mb-1">Atomic DvP</div>
+                    <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Delivery-versus-Payment</div>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800/80">
+                    <div class="text-3xl font-extrabold font-mono text-blue-400 mb-1">EIP-7702</div>
+                    <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Smart Account Delegation</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="receipts" class="py-20 border-t border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-xs font-mono font-semibold text-brand-cyan uppercase tracking-widest mb-3">Proof of Execution</h2>
+                <h3 class="text-3xl font-bold text-white">Verifiable On-Chain Base Mainnet Receipts</h3>
+                <p class="text-sm text-slate-400 mt-3 max-w-2xl mx-auto">No whitepapers or testnet promises. Every contract and settlement transaction is deployed and verifiable on BaseScan.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-md text-xs font-mono bg-emerald-500/10 text-brand-accent border border-emerald-500/20">ERC-20 Property Asset</span>
+                        <span class="text-xs font-mono text-slate-500">Chain ID: 8453</span>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-1">NVP-1 Permissioned Property Share</h4>
+                    <p class="text-xs text-slate-400 mb-4">Whitelisted real estate equity share with contract-level compliance enforcement.</p>
+                    <div class="bg-slate-950 p-3 rounded-lg font-mono text-xs text-slate-300 border border-slate-800 mb-4 truncate">0x11b229E0F4a0DAee8B8Bf20BdED941b7ba4E8C4c</div>
+                    <a href="https://basescan.org/address/0x11b229E0F4a0DAee8B8Bf20BdED941b7ba4E8C4c" target="_blank" class="inline-flex items-center text-xs font-semibold text-brand-accent hover:underline">View Contract on BaseScan →</a>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-md text-xs font-mono bg-cyan-500/10 text-brand-cyan border border-cyan-500/20">Settlement Token</span>
+                        <span class="text-xs font-mono text-slate-500">Programmable On-Chain Zakat</span>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-1">DKHYR Settlement Token</h4>
+                    <p class="text-xs text-slate-400 mb-4">Programmable settlement unit with configurable on-chain Zakat calculation.</p>
+                    <div class="bg-slate-950 p-3 rounded-lg font-mono text-xs text-slate-300 border border-slate-800 mb-4 truncate">0x9991bE994829601F90328CCF9cee4D1A55ADae70</div>
+                    <a href="https://basescan.org/address/0x9991bE994829601F90328CCF9cee4D1A55ADae70" target="_blank" class="inline-flex items-center text-xs font-semibold text-brand-cyan hover:underline">View Contract on BaseScan →</a>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-md text-xs font-mono bg-purple-500/10 text-purple-400 border border-purple-500/20">Atomic Execution</span>
+                        <span class="text-xs font-mono text-slate-500">Base Mainnet</span>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-1">NovaDvPSettlement (Atomic DvP)</h4>
+                    <p class="text-xs text-slate-400 mb-4">Both legs execute in a single transaction, or both revert. Deployed and verified on Base Mainnet.</p>
+                    <div class="bg-slate-950 p-3 rounded-lg flex items-center justify-between font-mono text-xs text-slate-300 border border-slate-800 mb-4">
+                        <span class="truncate">0xE4313472EF0C2C8BF5Fe9a0fF154F604481984f4</span>
+                    </div>
+                    <a href="https://basescan.org/address/0xE4313472EF0C2C8BF5Fe9a0fF154F604481984f4" target="_blank" rel="noopener" class="inline-flex items-center text-xs font-semibold text-purple-400 hover:underline">
+                        View Contract on BaseScan <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px]"></i>
+                    </a>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-md text-xs font-mono bg-blue-500/10 text-blue-400 border border-blue-500/20">Account Abstraction</span>
+                        <span class="text-xs font-mono text-slate-500">Uniswap V4</span>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-1">EIP-7702 Single-Tx Pool Deployment</h4>
+                    <p class="text-xs text-slate-400 mb-4">Contract delegation, Permit2 approval, and pool seeding in a single atomic payload.</p>
+                    <div class="bg-slate-950 p-3 rounded-lg font-mono text-xs text-slate-300 border border-slate-800 mb-4 truncate">0x53bd4a8c3f5ef4f6852efd0e17f8d742d80f274e779b4459266d47c3523481c7</div>
+                    <a href="https://basescan.org/tx/0x53bd4a8c3f5ef4f6852efd0e17f8d742d80f274e779b4459266d47c3523481c7" target="_blank" class="inline-flex items-center text-xs font-semibold text-blue-400 hover:underline">Verify EIP-7702 Tx on BaseScan →</a>
+                </div>
+
+                <!-- Live Atomic Settlement Proof -->
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800 hover:border-slate-700 transition-all">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-md text-xs font-mono bg-purple-500/10 text-purple-400 border border-purple-500/20">Live Settlement</span>
+                        <span class="text-xs font-mono text-slate-500">Block 52637043</span>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-1">Live Atomic DvP Settlement</h4>
+                    <p class="text-xs text-slate-400 mb-4">500 DKHYR + 5 NVP-1 exchanged in a single transaction. Atomic DvP with on-chain replay protection. Verified on Base Mainnet.</p>
+                    <div class="bg-slate-950 p-3 rounded-lg flex items-center justify-between font-mono text-xs text-slate-300 border border-slate-800 mb-4">
+                        <span class="truncate">0x69aaa0cc717ba9ec414d0dccbc167c49af829e4d459e5de79b5482b99085b4ab</span>
+                    </div>
+                    <a href="https://basescan.org/tx/0x69aaa0cc717ba9ec414d0dccbc167c49af829e4d459e5de79b5482b99085b4ab" target="_blank" rel="noopener" class="inline-flex items-center text-xs font-semibold text-purple-400 hover:underline">
+                        Verify Settlement on BaseScan <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="sdk" class="py-20 border-t border-slate-800/60 bg-slate-950/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-xs font-mono font-semibold text-brand-accent uppercase tracking-widest mb-3">Enterprise Infrastructure</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-white mb-4">The Nova Software Development Kit</h3>
+                <p class="text-slate-400 max-w-2xl mx-auto">Deploy, settle, and audit permissioned assets in minutes using our open SDK and whitelabel Docker Compose suite.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+                    <div class="text-brand-accent text-2xl mb-4"><i class="fa-solid fa-code"></i></div>
+                    <h4 class="text-lg font-bold text-white mb-2">For Developers</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Typed npm and PyPI packages. Base Mainnet contract bindings, EIP-7702 helpers, and custom MCP skills with minimal code.</p>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+                    <div class="text-brand-cyan text-2xl mb-4"><i class="fa-solid fa-chart-line"></i></div>
+                    <h4 class="text-lg font-bold text-white mb-2">For Investors</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Execute real estate settlements in plain language via Telegram. Sub-cent gas fees, automated solvency reporting, Programmable Zakat.</p>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+                    <div class="text-blue-400 text-2xl mb-4"><i class="fa-solid fa-building-columns"></i></div>
+                    <h4 class="text-lg font-bold text-white mb-2">For Enterprises</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Whitelabel, self-hosted Docker Compose stack. Bybit Level 3 Broker liquidity rails with on-chain compliance and AI auditing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTITUTIONAL VERIFICATION & INDEXING SECTION -->
+    <section id="verification" class="py-20 border-t border-slate-800/60 bg-slate-950/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-emerald-500/10 text-brand-accent text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-md mb-3">Trust &amp; Audit Matrix</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Live Verification &amp; Exchange Integration</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Exchange OAuth authorization, contract security analysis, and open-source developer resources — each independently verifiable.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Bybit OAuth -->
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-amber-500 font-bold text-sm">Bybit CeFi Rails</span>
+                        <span class="bg-amber-500/10 text-amber-500 text-[10px] font-mono px-2 py-0.5 rounded">OAuth 2.0</span>
+                    </div>
+                    <h4 class="text-base font-bold text-white mb-2">Broker Authorization</h4>
+                    <p class="text-xs text-slate-400 mb-3">Client ID: <code class="text-brand-accent font-mono">x9dmxAGkDDoa</code> — Level 3 Broker (Kr000820)</p>
+                    <a href="https://www.bybit.com/en/oauth?client_id=x9dmxAGkDDoa" target="_blank" rel="noopener" class="text-brand-accent text-xs font-semibold hover:underline">OAuth Portal &rarr;</a>
+                </div>
+
+                <!-- GoPlus Security -->
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-brand-accent font-bold text-sm">GoPlus Security</span>
+                        <span class="bg-emerald-500/10 text-brand-accent text-[10px] font-mono px-2 py-0.5 rounded">Security Check</span>
+                    </div>
+                    <h4 class="text-base font-bold text-white mb-2">DKHYR Token Security</h4>
+                    <p class="text-xs text-slate-400 mb-3">Automated contract security check — verify current status on GoPlus.</p>
+                    <a href="https://console.gopluslabs.io/token-security/8453/0x9991be994829601F90328CCF9cee4D1A55ADae70" target="_blank" rel="noopener" class="text-brand-accent text-xs font-semibold hover:underline">View Report &rarr;</a>
+                </div>
+
+                <!-- Binance Web3 -->
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-yellow-500 font-bold text-sm">Binance Web3</span>
+                        <span class="bg-yellow-500/10 text-yellow-500 text-[10px] font-mono px-2 py-0.5 rounded">Indexed</span>
+                    </div>
+                    <h4 class="text-base font-bold text-white mb-2">Token Discovery</h4>
+                    <p class="text-xs text-slate-400 mb-3">Token metadata available via Binance Web3 Terminal.</p>
+                    <a href="https://web3.binance.com/en/token/base/0x9991be994829601f90328ccf9cee4D1A55ADae70" target="_blank" rel="noopener" class="text-brand-accent text-xs font-semibold hover:underline">View on Binance Web3 &rarr;</a>
+                </div>
+
+                <!-- EIP-7702 -->
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-purple-400 font-bold text-sm">EIP-7702 Delegation</span>
+                        <span class="bg-purple-500/10 text-purple-400 text-[10px] font-mono px-2 py-0.5 rounded">BaseScan</span>
+                    </div>
+                    <h4 class="text-base font-bold text-white mb-2">Uniswap V4 State Inspection</h4>
+                    <p class="text-xs text-slate-400 mb-3">Authorization lists, state changes, and event logs verified on BaseScan.</p>
+                    <a href="https://basescan.org/tx/0x53bd4a8c3f5ef4f6852efd0e17f8d742d80f274e779b4459266d47c3523481c7#eventlog" target="_blank" rel="noopener" class="text-brand-accent text-xs font-semibold hover:underline">Inspect Tx &rarr;</a>
+                </div>
+
+                <!-- PyPI SDK -->
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-pink-400 font-bold text-sm">Open SDK</span>
+                        <span class="bg-pink-500/10 text-pink-400 text-[10px] font-mono px-2 py-0.5 rounded">PyPI</span>
+                    </div>
+                    <h4 class="text-base font-bold text-white mb-2">Python SDK</h4>
+                    <p class="text-xs text-slate-400 mb-3">Publicly published packages for developer integration.</p>
+                    <a href="https://pypi.org/user/nova_sdk/" target="_blank" rel="noopener" class="text-brand-accent text-xs font-semibold hover:underline">View on PyPI &rarr;</a>
+                </div>
+
+                <!-- Jarvis Skill Registry -->
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-cyan-400 font-bold text-sm">MCP Registry</span>
+                        <span class="bg-cyan-500/10 text-cyan-400 text-[10px] font-mono px-2 py-0.5 rounded">GitHub</span>
+                    </div>
+                    <h4 class="text-base font-bold text-white mb-2">Jarvis Skill Registry</h4>
+                    <p class="text-xs text-slate-400 mb-3">Open-source MCP skill orchestration and versioned tool dispatch.</p>
+                    <a href="https://github.com/rizbot4u/jarvis-skills-registry" target="_blank" rel="noopener" class="text-brand-accent text-xs font-semibold hover:underline">View on GitHub &rarr;</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="border-t border-slate-800/80 bg-slate-950 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+                <div class="flex items-center space-x-3 mb-2">
+                    <div class="w-6 h-6 rounded-lg bg-gradient-to-tr from-brand-accent to-brand-cyan flex items-center justify-center text-black font-bold text-xs">N</div>
+                    <span class="font-bold text-base text-white">NOVA GLOBAL KEYS</span>
+                </div>
+                <p class="text-xs text-slate-500">© 2026 Nova Global Keys. Built for Base Mainnet. Bybit Institutional Broker Kr000820.</p>
+            </div>
+            <div class="flex items-center space-x-6 text-slate-400 text-sm">
+                <a href="https://github.com/rizbot4u" target="_blank" class="hover:text-brand-accent">GitHub</a>
+                <a href="https://linkedin.com/in/rizwan-ali-974073377" target="_blank" class="hover:text-brand-accent">LinkedIn</a>
+                <a href="https://base.org" target="_blank" class="hover:text-brand-cyan">Base</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
