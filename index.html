@@ -77,7 +77,7 @@
                 <span class="bg-gradient-to-r from-brand-accent via-emerald-300 to-brand-cyan bg-clip-text text-transparent">On-Chain RWA Settlement</span>
             </h1>
             <p class="max-w-3xl mx-auto text-lg sm:text-xl text-slate-400 leading-relaxed mb-10">
-                The full tokenisation and settlement stack for Real-World Assets on <strong class="text-slate-200">Base Mainnet</strong>. Plain-language execution backed by an AI Governor Node and verified atomic DvP settlement at under $0.002 per round-trip.
+                The full tokenisation and settlement stack for Real-World Assets on <strong class="text-slate-200">Base Mainnet</strong>. Plain-language execution backed by an Nova Orchestrator and verified atomic DvP settlement — both legs in a single transaction, or both revert.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
                 <a href="#receipts" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-brand-accent to-emerald-500 text-slate-950 font-bold text-base shadow-xl shadow-emerald-500/20">
@@ -125,7 +125,7 @@
                 <div class="glass-panel p-6 rounded-2xl border border-slate-800">
                     <div class="flex items-center justify-between mb-4">
                         <span class="px-3 py-1 rounded-md text-xs font-mono bg-cyan-500/10 text-brand-cyan border border-cyan-500/20">Settlement Token</span>
-                        <span class="text-xs font-mono text-slate-500">Sharia Compliant</span>
+                        <span class="text-xs font-mono text-slate-500">Programmable On-Chain Zakat</span>
                     </div>
                     <h4 class="text-lg font-bold text-white mb-1">DKHYR Settlement Token</h4>
                     <p class="text-xs text-slate-400 mb-4">Programmable settlement unit with configurable on-chain Zakat calculation.</p>
@@ -137,10 +137,14 @@
                         <span class="px-3 py-1 rounded-md text-xs font-mono bg-purple-500/10 text-purple-400 border border-purple-500/20">Atomic Execution</span>
                         <span class="text-xs font-mono text-slate-500">Base Mainnet</span>
                     </div>
-                    <h4 class="text-lg font-bold text-white mb-1">Atomic DvP Settlement Transaction</h4>
-                    <p class="text-xs text-slate-400 mb-4">Verified instant Delivery-versus-Payment swap between NVP-1 shares and DKHYR.</p>
-                    <div class="bg-slate-950 p-3 rounded-lg font-mono text-xs text-slate-300 border border-slate-800 mb-4 truncate">0xf128a8026f0ee8f0adafef448bb711b2997d72b61a93abd3829df4f40d36bf27</div>
-                    <a href="https://basescan.org/tx/0xf128a8026f0ee8f0adafef448bb711b2997d72b61a93abd3829df4f40d36bf27" target="_blank" class="inline-flex items-center text-xs font-semibold text-purple-400 hover:underline">Verify Transaction on BaseScan →</a>
+                    <h4 class="text-lg font-bold text-white mb-1">NovaDvPSettlement (Atomic DvP)</h4>
+                    <p class="text-xs text-slate-400 mb-4">Both legs execute in a single transaction, or both revert. Deployed and verified on Base Mainnet.</p>
+                    <div class="bg-slate-950 p-3 rounded-lg flex items-center justify-between font-mono text-xs text-slate-300 border border-slate-800 mb-4">
+                        <span class="truncate">0x665714c657e35e0a571D902a542a30FC9A026DA5</span>
+                    </div>
+                    <a href="https://basescan.org/address/0x665714c657e35e0a571D902a542a30FC9A026DA5" target="_blank" rel="noopener" class="inline-flex items-center text-xs font-semibold text-purple-400 hover:underline">
+                        View Contract on BaseScan <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px]"></i>
+                    </a>
                 </div>
                 <div class="glass-panel p-6 rounded-2xl border border-slate-800">
                     <div class="flex items-center justify-between mb-4">
@@ -152,6 +156,23 @@
                     <div class="bg-slate-950 p-3 rounded-lg font-mono text-xs text-slate-300 border border-slate-800 mb-4 truncate">0x53bd4a8c3f5ef4f6852efd0e17f8d742d80f274e779b4459266d47c3523481c7</div>
                     <a href="https://basescan.org/tx/0x53bd4a8c3f5ef4f6852efd0e17f8d742d80f274e779b4459266d47c3523481c7" target="_blank" class="inline-flex items-center text-xs font-semibold text-blue-400 hover:underline">Verify EIP-7702 Tx on BaseScan →</a>
                 </div>
+
+                <!-- Live Atomic Settlement Proof -->
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800 hover:border-slate-700 transition-all">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-md text-xs font-mono bg-purple-500/10 text-purple-400 border border-purple-500/20">Live Settlement</span>
+                        <span class="text-xs font-mono text-slate-500">Block 52635071</span>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-1">First Atomic DvP Settlement</h4>
+                    <p class="text-xs text-slate-400 mb-4">500 DKHYR + 5 NVP-1 exchanged in a single transaction. Confirmed on Base Mainnet.</p>
+                    <div class="bg-slate-950 p-3 rounded-lg flex items-center justify-between font-mono text-xs text-slate-300 border border-slate-800 mb-4">
+                        <span class="truncate">0x1a04cf220d364b7a05a7492e32fe093831975f5636e49e4b17de9245cadc6101</span>
+                    </div>
+                    <a href="https://basescan.org/tx/0x1a04cf220d364b7a05a7492e32fe093831975f5636e49e4b17de9245cadc6101" target="_blank" rel="noopener" class="inline-flex items-center text-xs font-semibold text-purple-400 hover:underline">
+                        Verify Settlement on BaseScan <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px]"></i>
+                    </a>
+                </div>
+
             </div>
         </div>
     </section>
@@ -172,7 +193,7 @@
                 <div class="glass-panel p-6 rounded-2xl border border-slate-800">
                     <div class="text-brand-cyan text-2xl mb-4"><i class="fa-solid fa-chart-line"></i></div>
                     <h4 class="text-lg font-bold text-white mb-2">For Investors</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed">Execute real estate settlements in plain language via Telegram. Sub-cent gas fees, automated solvency reporting, Sharia-compliant Zakat.</p>
+                    <p class="text-xs text-slate-400 leading-relaxed">Execute real estate settlements in plain language via Telegram. Sub-cent gas fees, automated solvency reporting, Programmable Zakat Zakat.</p>
                 </div>
                 <div class="glass-panel p-6 rounded-2xl border border-slate-800">
                     <div class="text-blue-400 text-2xl mb-4"><i class="fa-solid fa-building-columns"></i></div>
@@ -209,10 +230,10 @@
                 <div class="glass-panel p-6 rounded-2xl border border-slate-800">
                     <div class="flex items-center justify-between mb-4">
                         <span class="text-brand-accent font-bold text-sm">GoPlus Security</span>
-                        <span class="bg-emerald-500/10 text-brand-accent text-[10px] font-mono px-2 py-0.5 rounded">Scanned</span>
+                        <span class="bg-emerald-500/10 text-brand-accent text-[10px] font-mono px-2 py-0.5 rounded">Security Check</span>
                     </div>
                     <h4 class="text-base font-bold text-white mb-2">DKHYR Token Security</h4>
-                    <p class="text-xs text-slate-400 mb-3">Automated contract security analysis, honeypot detection, permission checks.</p>
+                    <p class="text-xs text-slate-400 mb-3">Automated contract security check — verify current status on GoPlus.</p>
                     <a href="https://console.gopluslabs.io/token-security/8453/0x9991be994829601F90328CCF9cee4D1A55ADae70" target="_blank" rel="noopener" class="text-brand-accent text-xs font-semibold hover:underline">View Report &rarr;</a>
                 </div>
 
@@ -223,7 +244,7 @@
                         <span class="bg-yellow-500/10 text-yellow-500 text-[10px] font-mono px-2 py-0.5 rounded">Indexed</span>
                     </div>
                     <h4 class="text-base font-bold text-white mb-2">Token Discovery</h4>
-                    <p class="text-xs text-slate-400 mb-3">Official token metadata indexing on Binance Web3 Terminal.</p>
+                    <p class="text-xs text-slate-400 mb-3">Token metadata available via Binance Web3 Terminal.</p>
                     <a href="https://web3.binance.com/en/token/base/0x9991be994829601f90328ccf9cee4D1A55ADae70" target="_blank" rel="noopener" class="text-brand-accent text-xs font-semibold hover:underline">View on Binance Web3 &rarr;</a>
                 </div>
 
