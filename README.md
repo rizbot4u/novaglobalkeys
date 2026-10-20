@@ -15,7 +15,7 @@ I am a **Trader-Broker & Builder**, operating at the intersection of high-throug
 
 ## 🛠️ Technical Architecture (Live on Base Mainnet)
 
-**AI Execution Engine meets On-Chain Settlement.** 
+"Institutional Execution Engine meets On-Chain Settlement." 
 This platform demonstrates my ability to architect and deploy institutional-grade, permissioned real-world asset (RWA) infrastructure.
 
 ### Live Smart Contracts
